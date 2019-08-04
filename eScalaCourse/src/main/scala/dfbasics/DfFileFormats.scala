@@ -23,10 +23,11 @@ object DfFileFormats {
       ...
     )
     */
-      
+            
     val jsonDF = sparkSession.read.
       //schema(schema)// I can add schema here    
-      json("src/main/resources/dataset/example.json")     
+      json("src/main/resources/dataset/example.json")
+    println("JSON")  
     jsonDF.printSchema()
     jsonDF.show()
     println("Count: " + jsonDF.count)
@@ -34,6 +35,7 @@ object DfFileFormats {
     val orcDF = sparkSession.read.
       //schema(schema)// I can add schema here
       orc("src/main/resources/dataset/orc-file-format.orc")      
+    println("ORC")  
     orcDF.printSchema()
     orcDF.show()    
     println("Count: " + orcDF.count)
@@ -41,6 +43,7 @@ object DfFileFormats {
     val parquetDF = sparkSession.read.
       //schema(schema)// I can add schema here
       parquet("src/main/resources/dataset/userdata1.parquet")      
+    println("PARQUET")  
     parquetDF.printSchema()
     parquetDF.show()    
     println("Count: " + parquetDF.count)

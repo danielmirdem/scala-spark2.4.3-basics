@@ -31,7 +31,7 @@ object RDDWithCSVFile {
 
     onlyTwoColumns.take(5).foreach(println)
 
-    onlyTwoColumns.saveAsTextFile("src/main/resources/output/twoCols.txt")
+    onlyTwoColumns.saveAsTextFile("src/main/resources/output/twoCols")
 
   }
 
