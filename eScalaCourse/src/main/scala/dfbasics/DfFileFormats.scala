@@ -17,10 +17,11 @@ object DfFileFormats {
     
     /* I Can use schema with the read method
     val schema = StructType(
-      StructField("id", StringType, false) :: Nil,
-      StructField("Field2", IntegerType, true) :: Nil,
-      StructField("Field3", StringType, false) :: Nil,
+      StructField("id", StringType, false) ::
+      StructField("Field2", IntegerType, true) ::
+      StructField("Field3", IntegerType, true) ::
       ...
+      StructField("FieldN", StringType, false) :: Nil
     )
     */
             
