@@ -15,7 +15,7 @@ object CreatingSparkContextWithSparkSession {
 
     arrayRDD.foreach(println)
 
-    val file = "C:\\Users\\dmiranda\\Downloads\\airtravel.txt"
+    val file = "C:\\Users\\dmiranda\\Downloads\\airtravel.csv"
     val fileRDD = sparkSession.sparkContext.textFile(file)
 
     println("num of lines: ", fileRDD.count)

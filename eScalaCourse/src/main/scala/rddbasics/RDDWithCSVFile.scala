@@ -9,7 +9,7 @@ object RDDWithCSVFile {
       .master("local")
       .getOrCreate()
 
-    val csvRDD = spark.sparkContext.textFile("src/main/resources/dataset/airtravel.txt", 3);
+    val csvRDD = spark.sparkContext.textFile("src/main/resources/dataset/airtravel.csv", 3);
 
     println(csvRDD.count)
     csvRDD.take(5).foreach(println)

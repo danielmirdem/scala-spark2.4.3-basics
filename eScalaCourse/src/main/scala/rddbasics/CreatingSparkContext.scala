@@ -18,7 +18,7 @@ object CreatingSparkContext {
     println("Num of elements: " + arrayRDD.count)
 
     arrayRDD.foreach(println)
-    val file = "C:\\Users\\dmiranda\\Downloads\\airtravel.txt"
+    val file = "C:\\Users\\dmiranda\\Downloads\\airtravel.csv"
     val fileRDD = sc.textFile(file, 3)
 
     println("num of lines: ", fileRDD.count)

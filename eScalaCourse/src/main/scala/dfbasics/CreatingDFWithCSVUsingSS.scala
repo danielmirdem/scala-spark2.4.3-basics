@@ -13,7 +13,7 @@ object CreatingDFWithCSVUsingSS {
       //.option("header", "true")
       //.option("inferSchema", "true")
       .options(Map("header" -> "true", "inferSchema" -> "true"))
-      .csv("src/main/resources/dataset/grades.txt")
+      .csv("src/main/resources/dataset/grades.csv")
     
     df.printSchema()
     
