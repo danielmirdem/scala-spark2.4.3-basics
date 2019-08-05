@@ -21,6 +21,8 @@ object Demo {
  var result = 8 + 7                               //> result  : Int = 15
  var result2 = 8.+(7)                             //> result2  : Int = 15
  
+ 	case class Student2(var rollno: Int = 1, var name: String = "daniel", var marks: Int = 90)
+ 
   //class
   case class Student(var rollno: Int = 1, var name: String = "daniel", var marks: Int = 90)
   {
