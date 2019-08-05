@@ -34,5 +34,6 @@ object DataSetBasics extends App {
                    .schema(ownSchema)
                    .csv("src/main/resources/dataset/grades.csv").as[Grade]
     
-   gradesDS.show() 
+   gradesDS.show()
+
 }
