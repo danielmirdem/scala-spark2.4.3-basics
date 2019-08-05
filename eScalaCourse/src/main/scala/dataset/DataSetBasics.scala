@@ -13,9 +13,7 @@ object DataSetBasics extends App {
       .appName("DataSet Basics")
       .master("local")
       .getOrCreate()
-  
-   import spark.implicits._   
-   
+     
     val ownSchema =  StructType(
       StructField("lastName", StringType, false) ::
       StructField("firstName", StringType, false) ::
@@ -27,7 +25,9 @@ object DataSetBasics extends App {
       StructField("finalScore", DoubleType, false) ::
       StructField("grade", StringType, false) :: Nil
     )
-   
+  
+   import spark.implicits._   
+    
    val gradesDS = spark.read
                    .option("header", "true")
                    //.option("inferSchema", "true")
