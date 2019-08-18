@@ -4,4 +4,4 @@ Scala-Spark
 
 # Architecture Diagram
 
-![Test Image 1](sovereign-identity.png)
+![Test Image 1](cluster-overview.png)
